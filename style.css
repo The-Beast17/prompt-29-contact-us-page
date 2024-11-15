@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+html , body{
+    height : 100%;
+    width : 100%;
+}
+
+main{
+    height : 100%;
+    width : 100%;
+    font-family: "Montserrat";
+}
+ main .empty{
+    height : 10%;
+ }
+
+ main .content {
+    width : 100%;
+    height : 90%;
+    display : flex;
+}
+
+main .content .left{
+    width : 60%;
+    height : 100%;
+    display: flex;
+    flex-direction: column;
+    align-items : center;
+    justify-content: center;
+    padding : 3%;
+}
+main .content .left h1{
+    font-size: 100px;
+}
+main .content .left p{
+    font-size: 18px;
+    padding : 2%;
+}
+main .content .right{
+    width : 40%;
+    height : 100%;
+    display: flex;
+    align-items : center;
+    justify-content: center;
+    /* background-color: black; */
+}
+
+main .content .right form{
+    width : 350px;
+    height : 80%;
+    padding : 3%;
+    background-color : white;
+    display: flex;
+    flex-direction: column;
+    border-radius :8px;
+    box-shadow: 0 0 10px royalblue;
+}
+
+main .content .right form input{
+    padding : 1.5vh 3vh;
+    width : 100%;
+    margin : 3% 0;
+    border-radius :8px;
+    outline: none;
+    border : 1px solid rgb(8, 8, 8);
+}
+
+main .content .right form label{
+    width : 100%;
+    font-size : 17px;
+    font-weight : 500;
+  
+}
+main .content .right form label input{
+    width : 49%;
+    border-radius :8px;
+    
+}
+main .content .right form .message{
+    margin-top : 3%;
+}
+main .content .right form textarea{
+    width : 100%;
+    height : 25%;
+    padding : 2%;
+    margin : 2% 0;
+    border-radius :8px;
+    outline: none;
+    border : 1px solid rgb(6, 6, 6);
+}
+
+main .content .right form button{
+    padding : 12px  30px;
+    margin : 5% auto;
+    border-radius :8px;
+    background-color: royalblue;
+    color  : white;
+    border : none;
+    transition: 0.2s linear;
+    
+}
+
+main .content .right form button:hover{
+    background-color: rgb(29, 57, 142);
+}
+
+input:focus , textarea:focus{
+    border : 1px solid blue;
+    box-shadow: 0 0 5px royalblue; 
+}
+
+@media (max-width : 600px){
+    main{
+        height : max-content;
+    }
+    main .content{
+        flex-direction: column;
+    }
+    main .content .left{
+       width : 100%;
+       height : 50vh;
+    }
+    main .content .right{
+       width : 100%;
+       height : 80vh;
+    }
+   
+}
